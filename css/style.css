@@ -16,7 +16,7 @@
   width: 80%;
   margin: 5rem auto;
   border-radius: 1rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 h3 {
@@ -128,7 +128,11 @@ input, select {
 .popular-section{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  row-gap: 30rem;
+  gap: 5rem;
+}
+.popular-section img{
+  width: 100%;
+  height: 100%;
 }
 .text-content{
   display: flex;
@@ -159,6 +163,18 @@ input, select {
   margin: 1rem 0;
   gap: 1rem;
 }
+.row-2{
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 0.7fr ;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+.row-3{
+  display: grid;
+  grid-template-columns: 0.8fr 1.25fr ;
+  margin: 1rem 0;
+  gap: 1rem;
+}
 .country-card{
   position: relative;
 }
@@ -171,4 +187,70 @@ input, select {
   font-weight: bold;
   transform: translate(-50%,-50%);
 }
+/* _____________footer-section______________ */
+.footer-section{
+  background: rgba(19, 19, 24, 0.05);
+  padding: 2rem 0;
+}
+.footer-section .logo{
+  margin: 2rem auto;
+}
+.social{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+}
+.social i{
+  height: 44px;
+  font-size: 30px;
+}
+.footer-section hr{
+  margin: 2rem 0;
+}
+.hum-burger{
+  display: none;
+}
+/* ______________responsive media-query _____________*/
+@media screen and (max-width:600px){
+  .nav-option{
+    display:none;
+  }
+  .hum-burger{
+    display: block;
+  }
+  .hum-burger i{
+    font-size: 37px;
+  }
+  h3{
+    font-size: 30px;
+  }
+  p{
+    font-size: 16px;
+  }
+  .container {
+    margin: 3rem auto;
+  }
+  .explore-container h3{
+    font-size: 30px;
+  }
+  .explore-container p{
+    width: 90%;
+  }
+  .travel-inputs{
+    flex-direction: column;
+    /* margin: auto; */
+  }
+  .travel-inputs input,
+  .travel-inputs select,
+  .travel-inputs button{
+    width: 90%;
+    margin: 1rem 0;
+  }
+  .popular-section, .row-1,.row-2,.row-3{
+    grid-template-columns:1fr;
+    /* gap: 2rem; */
+  }
 
+}
