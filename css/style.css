@@ -73,7 +73,7 @@ li {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 7rem 0;
+  padding: 9rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,7 +140,7 @@ input, select {
   justify-content: space-between;
 }
 .text-content p, li{
-  text-align: left;
+  /* text-align: left; */
   font-size: 16px;
   line-height: 24px;
   word-spacing: 5px;
