@@ -3,7 +3,7 @@
 .mulish-font-style {
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
 }
 
@@ -16,7 +16,8 @@
   width: 80%;
   margin: 5rem auto;
   border-radius: 1rem;
-  /* border: 1px solid red; */
+
+  border: 1px solid red;
 }
 
 h3 {
@@ -31,7 +32,7 @@ h3 {
 
 p,
 li {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: normal;
   line-height: normal;
   text-align: center;
@@ -42,6 +43,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 /* ____logo____ */
@@ -67,9 +69,10 @@ li {
 .nav-option p {
   cursor: pointer;
 }
+
 /* _____________banner____________ */
-.explore-your-travel{
-  background-image: linear-gradient(180deg, rgba(19,19,24,0.8) 0%,rgba(19,19,24,0) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+.explore-your-travel {
+  background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.8) 0%, rgba(19, 19, 24, 0) 100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -78,21 +81,24 @@ li {
   justify-content: center;
   align-items: center;
 }
-.explore-container h3{
+
+.explore-container h3 {
   color: white;
-  font-size:3rem ;
+  font-size: 3rem;
   font-weight: 800;
 }
-.explore-container p{
+
+.explore-container p {
   color: rgb(206, 235, 230);
-  font-size:18px ;
+  font-size: 18px;
   line-height: 26px;
   width: 670px;
   padding: 1.5rem 0;
   margin: auto;
   font-weight: 500;
 }
-.travel-inputs{
+
+.travel-inputs {
   margin-top: 2rem;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.3);
@@ -100,157 +106,361 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  backdrop-filter:blur(4px) ;
+  backdrop-filter: blur(4px);
 
 }
-input, select {
+
+input,
+select {
   width: 170px;
   height: 50px;
-  padding:0 0.5rem ;
+  padding: 0 0.5rem;
   margin: 0 1rem;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   font-size: 16px;
 }
-.btn-primary{
+
+.btn-primary {
   width: 170px;
   height: 50px;
-  padding:0.7rem 1.2rem ;
+  padding: 0.7rem 1.2rem;
   border-radius: 8px;
   background: rgb(255, 84, 0);
-  border: 1px solid  rgb(255, 84, 0);
+  border: 1px solid rgb(255, 84, 0);
   font-size: 14px;
   color: white;
   font-weight: bold;
 }
+
 /* ___________popular section________ */
-.popular-section{
+.popular-section {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
 }
-.popular-section img{
+
+.popular-section img {
   width: 100%;
   height: 100%;
 }
-.text-content{
+
+.text-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.text-content p, li{
-  /* text-align: left; */
+
+.text-content p,
+li {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 30px;
   word-spacing: 5px;
   letter-spacing: 1px;
 }
+
 .text-content p,
 .text-content li,
-.text-content h3{
+.text-content h3 {
   text-align: left;
 }
+
 /* ________Destianation________ */
-.your-destination img{
+.your-destination img {
   width: 100%;
   height: 300px;
   filter: brightness(70%);
 }
-.row-1{
+
+.row-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   margin: 1rem 0;
   gap: 1rem;
 }
-.row-2{
+
+.row-2 {
   display: grid;
-  grid-template-columns: 0.8fr 1fr 0.7fr ;
+  grid-template-columns: 0.8fr 1fr 0.7fr;
   margin: 1rem 0;
   gap: 1rem;
 }
-.row-3{
+
+.row-3 {
   display: grid;
-  grid-template-columns: 0.8fr 1.25fr ;
+  grid-template-columns: 0.8fr 1.25fr;
   margin: 1rem 0;
   gap: 1rem;
 }
-.country-card{
+
+.country-card {
   position: relative;
 }
-.Country{
+
+.Country {
   position: absolute;
   top: 50%;
   left: 50%;
   color: white;
   font-size: 24px;
   font-weight: bold;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
+
+/* ____________choose-container____________ */
+.choose-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  border: 1px solid green;
+  width: 500px;
+  height: 200px;
+  padding: 2rem 0 1rem 1.5rem;
+  background: #fbb463c7;
+  border: 1px solid #FBB563;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+}
+
+.card h4 {
+  margin: 20px 0;
+  font-size: 23px;
+  color: #131318;
+}
+
+.card-description {
+  text-align: left;
+  line-height: 24px;
+  font-size: 15px;
+  color: #5A5A5D;
+  max-width: 400px;
+}
+
+#color {
+  background: #e9444496;
+}
+
+#bg-color {
+  background: #e9444459;
+}
+
+/* _____________deals-container_____________ */
+.deals-section {
+  max-width: 1440;
+  height: 320px;
+  margin-top: 50px;
+  background-image: url('../Images/Group\ 40.png');
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  border-radius: 20px;
+  position: relative;
+}
+
+#deals-section {
+  max-width: 1440;
+  margin-top: 50px;
+  background-image: url('../Images/Group\ 39.png');
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.deals-card {
+  width: 500px;
+  padding: 40px 60px 40px 40px;
+  background: #ffffff94;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  left: 57%;
+}
+
+#deals-card {
+  width: 500px;
+  padding: 40px 60px 40px 40px;
+  background: #ffffff94;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  /* position: absolute;
+  left: 57%; */
+}
+
+.deals-card h4 {
+  margin: 15px 0;
+  font-size: 23px;
+  font-weight: bold;
+  color: #131318;
+}
+
+#deals-card h4 {
+  margin: 15px 0;
+  font-size: 23px;
+  font-weight: bold;
+  color: #131318;
+}
+
+.deals-card h5 {
+  margin: 20px 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #131318;
+}
+
+#deals-card h5 {
+  margin: 20px 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #131318;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* _____________footer-section______________ */
-.footer-section{
+.footer-section {
+  /* border: 1px solid red; */
   background: rgba(19, 19, 24, 0.05);
   padding: 2rem 0;
 }
-.footer-section .logo{
+
+.footer-section .logo {
   margin: 2rem auto;
 }
-.social{
+
+.social {
   width: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 2rem auto;
 }
-.social i{
+
+.social i {
   height: 44px;
   font-size: 30px;
 }
-.footer-section hr{
+
+.footer-section hr {
   margin: 2rem 0;
 }
-.hum-burger{
+
+.hum-burger {
   display: none;
 }
+
 /* ______________responsive media-query _____________*/
-@media screen and (max-width:600px){
-  .nav-option{
-    display:none;
+@media screen and (max-width:600px) {
+  .container {
+    width: 90%;
+    /* margin: 5rem auto; */
   }
-  .hum-burger{
+
+  .nav-option {
+    display: none;
+  }
+
+  .hum-burger {
     display: block;
   }
-  .hum-burger i{
+
+  .hum-burger i {
     font-size: 37px;
   }
-  h3{
+
+  h3 {
     font-size: 30px;
   }
-  p{
+
+  p {
     font-size: 16px;
   }
+
   .container {
     margin: 3rem auto;
   }
-  .explore-container h3{
+
+  .explore-container h3 {
     font-size: 30px;
   }
-  .explore-container p{
+
+  .explore-container p {
     width: 90%;
   }
-  .travel-inputs{
+
+  .travel-inputs {
     flex-direction: column;
     /* margin: auto; */
   }
+
   .travel-inputs input,
   .travel-inputs select,
-  .travel-inputs button{
+  .travel-inputs button {
     width: 90%;
     margin: 1rem 0;
   }
-  .popular-section, .row-1,.row-2,.row-3{
-    grid-template-columns:1fr;
+
+  .popular-section,
+  .row-1,
+  .row-2,
+  .row-3 {
+    grid-template-columns: 1fr;
     /* gap: 2rem; */
+  }
+
+  /* ___________choose-container____________ */
+  .choose-cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 350px;
+    height: 250px;
+    padding-right: 20px;
+  }
+
+  /* ___________deals-container____________ */
+  .deals-section {
+    height: 500px;
+    position: relative;
+  }
+  #deals-section {
+    height: 500px;
+    position: relative;
+  }
+
+  .deals-card {
+    max-width: 250px;
+    position: absolute;
+    top: 32%;
+    left: 5%;
+  }
+  #deals-card {
+    max-width: 250px;
+    position: absolute;
+    top: 32%;
+    left: 5%;
   }
 
 }
