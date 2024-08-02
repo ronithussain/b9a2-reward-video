@@ -17,7 +17,7 @@
   margin: 5rem auto;
   border-radius: 1rem;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 h3 {
@@ -375,17 +375,16 @@ li {
 .newsletter-container {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
 }
 
 .from-newsletter {
   width: 48%;
-  /* border: 1px solid magenta; */
+  border: 1px solid magenta;
+  border-radius: 15px;
 }
 
 .news-image {
   width: 48%;
-  /* border: 1px solid green; */
 }
 
 .news-image img {
@@ -577,6 +576,24 @@ input[type="email"] {
     width: 390px;
     height: 230px;
   }
+  /* _________newsletter-container_________ */
+  .newsletter-container{
+    flex-direction: column;
+  }
+  .from-newsletter{
+    width: 100%;
+  }
+  .news-image{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .from-newsletter input[type="text"],
+input[type="email"]{
+  width: 85%;
+}
+.from-btn{
+  margin-bottom: 20px;
+}
 
 
 }
