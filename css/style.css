@@ -219,11 +219,11 @@ li {
 }
 
 .card {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 500px;
   height: 200px;
   padding: 2rem 0 1rem 1.5rem;
-  background: #fbb463c7;
+  background: #fbb46369;
   border: 1px solid #FBB563;
   border-radius: 10px;
 }
@@ -248,11 +248,11 @@ li {
 }
 
 #color {
-  background: #e9444496;
+  background: #e9444425;
 }
 
 #bg-color {
-  background: #e9444459;
+  background: #e944446c;
 }
 
 /* _____________deals-container_____________ */
@@ -328,8 +328,111 @@ li {
   color: #131318;
 }
 
+/*_________Place-container_________ */
+.place-container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 15px;
+}
+
+.place-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.place-description {
+  text-align: left;
+  line-height: 24px;
+  font-size: 15px;
+  color: #5A5A5D;
+  margin: 10px 0;
+}
+
+.place-text li {
+  text-align: left;
+  margin: 15px 0;
+}
+
+.place-btn {
+  width: 170px;
+  height: 50px;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  background: rgb(255, 84, 0);
+  border: 1px solid rgb(255, 84, 0);
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.place-video iframe {
+  border-radius: 15px;
+}
+
+/* ___________newsletter-container___________ */
+.newsletter-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.from-newsletter {
+  width: 48%;
+  /* border: 1px solid magenta; */
+}
+
+.news-image {
+  width: 48%;
+  /* border: 1px solid green; */
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* form */
+.from-newsletter h4 {
+  margin: 15px 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #131318;
+  margin-left: 20px;
+}
+.from-newsletter p{
+  text-align: left;
+  line-height: 24px;
+  font-size: 15px;
+  color: #5A5A5D;
+  margin: 10px 0 10px 20px;
+}
+.from-newsletter hr{
+  margin: 3rem 25px;
+  color: #131318;
+}
 
 
+
+.from-newsletter input[type="text"],
+input[type="email"] {
+  height: 30px;
+  width: 90%;
+  padding: 15px 15px;
+  margin-bottom: 20px;
+  background: rgba(19, 19, 24, 0.05);
+}
+.from-newsletter .from-btn{
+  background: rgb(255, 84, 0);
+  width: 94%;
+  height: 60px;
+  margin-left: 14px;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  font-size: 17px;
+}
 
 
 
@@ -435,7 +538,7 @@ li {
   }
 
   .card {
-    width: 350px;
+    width: 340px;
     height: 250px;
     padding-right: 20px;
   }
@@ -445,6 +548,7 @@ li {
     height: 500px;
     position: relative;
   }
+
   #deals-section {
     height: 500px;
     position: relative;
@@ -456,11 +560,23 @@ li {
     top: 32%;
     left: 5%;
   }
+
   #deals-card {
     max-width: 250px;
     position: absolute;
     top: 32%;
     left: 5%;
   }
+
+  /*_________Place-container_________ */
+  .place-container {
+    flex-direction: column;
+  }
+
+  .place-video iframe {
+    width: 390px;
+    height: 230px;
+  }
+
 
 }
