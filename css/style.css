@@ -473,7 +473,7 @@ input[type="email"] {
 }
 
 /* ______________responsive media-query _____________*/
-@media screen and (max-width:600px) {
+@media screen and (max-width:576px) {
   .container {
     width: 90%;
     /* margin: 5rem auto; */
@@ -537,31 +537,30 @@ input[type="email"] {
   }
 
   .card {
-    width: 340px;
+    width: 300px;
     height: 250px;
     padding-right: 20px;
   }
 
   /* ___________deals-container____________ */
   .deals-section {
-    height: 500px;
+    height: 525px;
     position: relative;
   }
 
   #deals-section {
-    height: 500px;
+    height: 525px;
     position: relative;
   }
 
   .deals-card {
-    max-width: 250px;
+    max-width: 220px;
     position: absolute;
     top: 32%;
     left: 5%;
   }
-
   #deals-card {
-    max-width: 250px;
+    max-width: 220px;
     position: absolute;
     top: 32%;
     left: 5%;
@@ -573,7 +572,7 @@ input[type="email"] {
   }
 
   .place-video iframe {
-    width: 390px;
+    width: 350px;
     height: 230px;
   }
   /* _________newsletter-container_________ */
