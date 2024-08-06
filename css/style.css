@@ -281,7 +281,7 @@ li {
 }
 
 .deals-card {
-  width: 500px;
+  max-width: 500px;
   padding: 40px 60px 40px 40px;
   background: #ffffff94;
   border-radius: 20px;
@@ -291,7 +291,7 @@ li {
 }
 
 #deals-card {
-  width: 500px;
+  max-width: 500px;
   padding: 40px 60px 40px 40px;
   background: #ffffff94;
   border-radius: 20px;
@@ -473,7 +473,7 @@ input[type="email"] {
 }
 
 /* ______________responsive media-query _____________*/
-@media screen and (max-width:576px) {
+@media screen and (max-width:600px) {
   .container {
     width: 90%;
     /* margin: 5rem auto; */
